@@ -483,6 +483,7 @@
 	supports-emmc;
 	non-removable;
 	max-frequency = <200000000>;
+	no-1-8-v;
 	status = "okay";
 };
 
