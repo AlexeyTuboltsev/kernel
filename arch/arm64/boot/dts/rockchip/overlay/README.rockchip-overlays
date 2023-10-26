@@ -617,3 +617,5 @@ Radxa 10.1 inch display resolution is 1280x800p60.
 Usage: Add the item "rock-3b-radxa-10p1inch-display" to "overlays=" line in /boot/uEnv.txt.
 
 overlays=rock-3b-radxa-10p1inch-display
+
+== end ==
