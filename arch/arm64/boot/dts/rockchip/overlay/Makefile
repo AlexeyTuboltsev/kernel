@@ -91,14 +91,10 @@ dtbo-$(CONFIG_ARCH_ROCKCHIP) += \
 	radxa-cm3i-gmac1.dtbo \
 	radxa-cm3-io-dual-cameras-gc2053-gc2093.dtbo
 
-scr-$(CONFIG_ARCH_ROCKCHIP) += \
-	rockchip-fixup.scr
-
 dtbotxt-$(CONFIG_ARCH_ROCKCHIP) += \
 	README.rockchip-overlays
 
-targets += $(dtbo-y) $(scr-y) $(dtbotxt-y)
+targets += $(dtbo-y) $(dtbotxt-y)
 
-always			:= $(dtbo-y) $(scr-y) $(dtbotxt-y)
-clean-files		:= *.dtbo *.scr
-
+always-y		:= $(dtbo-y) $(dtbotxt-y)
+clean-files		:= *.dtbo
