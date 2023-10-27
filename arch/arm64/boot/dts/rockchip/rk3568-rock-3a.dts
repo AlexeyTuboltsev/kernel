@@ -208,7 +208,7 @@
 		pinctrl-names = "default";
 		pinctrl-0 = <&wifi_host_wake_irq>;
 		WIFI,host_wake_irq = <&gpio3 RK_PD5 GPIO_ACTIVE_HIGH>;
-		status = "okay";
+		status = "disabled";
 	};
 
 	gpio_leds: gpio-leds {
@@ -649,6 +649,7 @@
 	supports-emmc;
 	non-removable;
 	max-frequency = <200000000>;
+	no-1-8-v;
 	status = "okay";
 };
 
